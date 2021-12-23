@@ -11,9 +11,12 @@ body {
   background-color: var(--black);
   color: var(--white);
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 .navbar {
   font-size: 1.7rem;
-  margin-top: 2rem;
+  padding-top: 1rem;
 }
 .navbar-brand {
   font-size: 2.5rem;
@@ -72,4 +75,46 @@ body {
   width: 50%;
   font-size: 1.6rem;
   margin-bottom: 2rem;
+}
+
+/* Mission and vision section */
+/*********************************************/
+.mission-vision {
+  background: url("../images/bg.png");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+.mission,
+.vision {
+  width: 50%;
+  z-index: 2;
+}
+.mission {
+  margin-bottom: 10rem;
+}
+.subtitle {
+  font-size: 3rem;
+  color: var(--cta);
+  padding: 2rem 0;
+  font-weight: 800;
+}
+.vision {
+  float: right;
+}
+.mission-vision .lead {
+  font-size: 17px;
+  line-height: 1.6;
+}
+.svg-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  opacity: .2;
 }

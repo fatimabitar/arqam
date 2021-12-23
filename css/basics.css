@@ -89,7 +89,10 @@ body {
   -ms-transform: translateY(-5px);
   -o-transform: translateY(-5px);
 }
-.btn .fas{
+.btn .fas {
   animation: fade 2s linear infinite alternate;
   -webkit-animation: fade 2s linear infinite alternate;
+}
+.bg-dark{
+  background: rgba(0, 0, 0, 0.6) !important;
 }

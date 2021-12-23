@@ -7,6 +7,11 @@
   .hero .lead {
     width: 70%;
   }
+  /* Mission and Vision */
+  .mission-vision {
+    height: auto;
+    padding: 10rem 0 !important;
+  }
 }
 @media (max-width: 992px) {
   .hero .title {
@@ -19,6 +24,7 @@
   }
 }
 @media (max-width: 768px) {
+  /* Navbar */
   .navbar {
     background-color: rgba(0, 0, 0, 0.5);
     margin: 0 !important;
@@ -26,18 +32,40 @@
   .hero .title {
     font-size: 3rem;
   }
+  .mission,
+  .vision {
+    margin: 0 auto 3rem;
+    width: 80%;
+    text-align: center;
+  }
+  .vision {
+    float: none;
+  }
 }
 @media (max-width: 600px) {
 }
 @media (max-width: 400px) {
+  /* Hero section */
+  .hero .content {
+    margin-top: 3rem;
+  }
   .hero .title {
     font-size: 2rem;
     margin: 1rem 0 !important;
   }
-  .hero .lead {
-    font-size: 14px;
+   .lead {
+    font-size: 14px !important;
   }
   .hero .btn {
     margin-bottom: 2rem;
+  }
+  /* Mission and Vision */
+  .mission-vision {
+    height: auto;
+    padding: 5rem 0 !important;
+  }
+  .mission,
+  .vision {
+    width: 100%;
   }
 }
