@@ -94,5 +94,5 @@ body {
   -webkit-animation: fade 2s linear infinite alternate;
 }
 .bg-dark{
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
 }
