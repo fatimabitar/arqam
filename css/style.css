@@ -12,7 +12,7 @@ body {
   color: var(--white);
 }
 .navbar {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   margin-top: 2rem;
 }
 .navbar-brand {
@@ -34,7 +34,7 @@ body {
   content: "";
   position: absolute;
   width: 0%;
-  height: 3px;
+  height: 2px;
   left: 0;
   background-color: var(--cta);
   bottom: 0;
@@ -62,14 +62,13 @@ body {
 .hero .content {
   width: 100%;
   height: 100%;
-  /* justify-content: space-evenly; */
 }
 .content .title {
   font-size: 5rem;
   width: 40%;
   font-weight: 800;
 }
-.content .lead{
+.content .lead {
   width: 50%;
   font-size: 1.6rem;
   margin-bottom: 2rem;

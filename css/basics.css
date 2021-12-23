@@ -90,6 +90,6 @@ body {
   -o-transform: translateY(-5px);
 }
 .btn .fas{
-  animation: fade 1s linear infinite alternate;
-  -webkit-animation: fade 1s linear infinite alternate;
+  animation: fade 2s linear infinite alternate;
+  -webkit-animation: fade 2s linear infinite alternate;
 }
