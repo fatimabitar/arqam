@@ -4,11 +4,149 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Codlex</title>
+    <title>Arqam</title>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/basics.css" />
+    <link rel="stylesheet" href="css/animation.css" />
   </head>
   <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container">
+        <a
+          class="navbar-brand text-uppercase navbar-logo text-uppercase"
+          href="/"
+        >
+          Arqam
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarsExample05"
+          aria-controls="navbarsExample05"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse navbar-light"
+          id="navbarsExample05"
+        >
+          <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+            <li
+              class="
+                nav-item
+                pr-lg-3 pr-md-2 pr-sm-0
+                pl-lg-3 pl-md-2 pl-sm-0
+                text-center
+                my-md-1 my-sm-1
+              "
+            >
+              <a
+                class="nav-link active"
+                data-section="header"
+                href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li
+              class="
+                nav-item
+                pr-lg-3 pr-md-2 pr-sm-0
+                pl-lg-3 pl-md-2 pl-sm-0
+                text-center
+                my-md-1 my-sm-1
+              "
+            >
+              <a class="nav-link" href="">services</a>
+            </li>
+            <li
+              class="
+                nav-item
+                pr-lg-3 pr-md-2 pr-sm-0
+                pl-lg-3 pl-md-2 pl-sm-0
+                text-center
+                my-md-1 my-sm-1
+              "
+            >
+              <a class="nav-link" href="">about us</a>
+            </li>
+            <li
+              class="
+                nav-item
+                pr-lg-3 pr-md-2 pr-sm-0
+                pl-lg-3 pl-md-2 pl-sm-0
+                text-center
+                my-md-1 my-sm-1
+              "
+            >
+              <a class="nav-link" href="">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero section -->
+    <header class="hero">
+      <div class="container w-100 h-100">
+        <div class="content center-col">
+          <img src="https://via.placeholder.com/150.png" alt="" class="logo" />
+          <h1 class="title m-3 text-center">Lorem ipsum dolor sit amet.</h1>
+          <p class="lead text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            cum dignissimos necessitatibus illum eum harum deleniti, deserunt
+            sapiente ipsa mollitia quaerat aperiam enim sint quibusdam
+            voluptates delectus, consectetur recusandae odio!
+          </p>
+          <a href="#" class="btn text-uppercase"
+            >learn more <i class="pl-3 fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

@@ -1,0 +1,43 @@
+@media (max-width: 1200px) {
+  .hero .title {
+    width: 100%;
+    font-size: 5rem;
+    margin: 2rem 0 !important;
+  }
+  .hero .lead {
+    width: 70%;
+  }
+}
+@media (max-width: 992px) {
+  .hero .title {
+    font-size: 3.5rem;
+    margin: 2rem 0 !important;
+  }
+  .hero .lead {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 !important;
+  }
+  .hero .title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 600px) {
+}
+@media (max-width: 400px) {
+  .hero .title {
+    font-size: 2rem;
+    margin: 1rem 0 !important;
+  }
+  .hero .lead {
+    font-size: 14px;
+  }
+  .hero .btn {
+    margin-bottom: 2rem;
+  }
+}
