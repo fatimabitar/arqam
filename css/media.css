@@ -29,6 +29,17 @@
   .img-wrapper {
     margin-bottom: 3rem;
   }
+  /* Services Section */
+  .services-wrapper {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(5, 250px);
+  }
+  .card-title h3 {
+    font-size: 1.6rem;
+  }
+  .card-title p {
+    font-size: 1.4rem;
+  }
 }
 @media (max-width: 768px) {
   /* Navbar */
@@ -51,6 +62,11 @@
   }
 }
 @media (max-width: 600px) {
+  /* Services Section */
+  .services-wrapper {
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(9, 300px);
+  }
 }
 @media (max-width: 400px) {
   /* Hero section */
