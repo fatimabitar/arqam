@@ -1,14 +1,5 @@
-//  Preloader
-const preloader = document.getElementById("preloader-container");
-TweenMax.staggerTo(
-  $("svg.preloader circle"),
-  1.5,
-  { strokeDashoffset: 392.68, repeat: -1, ease: Back.easeOut.config(2) },
-  0.1
-);
-setTimeout(() => {
-  preloader.classList.add("done");
-}, 2500);
+//reusable function
+//Remove an Element after the animation is done..
 function removeElement(element) {
   if (typeof element === "string") {
     element = document.querySelector(element);
@@ -17,6 +8,19 @@ function removeElement(element) {
     element.parentNode.removeChild(element);
   };
 }
+//  Preloader
+const tl = gsap.timeline();
+tl
+  .to(".first", 0.8, {
+    left: "-100%",
+    ease: Power1.easeInOut,
+  })
+  .call(removeElement(".first"))
+  .to(".second", 0.5, {
+    left: "100%",
+    ease: Power1.easeInOut,
+  },"0")
+  .call(removeElement(".second"));
 
 // //Hero animations
 let tl1 = gsap.timeline({
@@ -25,7 +29,7 @@ let tl1 = gsap.timeline({
     ease: Power1.easeInOut,
   },
   smoothChildTiming: true,
-  delay: 2.5,
+  delay: 0.5,
 });
 tl1
   .from(".navbar", {

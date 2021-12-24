@@ -7,6 +7,24 @@
   /* Other */
   --transition: all 0.5s ease;
 }
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  z-index: 10000;
+  background: #222;
+}
+.first {
+  left: 0;
+  width:  50%;
+}
+
+.second {
+  left: 50%;
+  width: 50%;
+}
+
 
 body {
   background-color: var(--black);
