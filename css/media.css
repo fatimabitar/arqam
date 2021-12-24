@@ -12,6 +12,16 @@
     height: auto;
     padding: 10rem 0 !important;
   }
+  /* About section */
+  .about {
+    background-size: cover;
+    height: auto;
+    padding: 10rem 0 15rem;
+  }
+  /* contact section */
+  .contact {
+    height: auto;
+  }
 }
 @media (max-width: 992px) {
   .hero .title {
@@ -27,7 +37,8 @@
     padding: 5rem 0 2rem;
   }
   .img-wrapper {
-    margin-bottom: 3rem;
+    margin: 0 auto 3rem;
+    width: 70%;
   }
   /* Services Section */
   .services-wrapper {
@@ -60,12 +71,53 @@
   .vision {
     float: none;
   }
+  /* About section */
+  .about {
+    background-size: cover;
+    height: auto;
+    padding: 10rem 0 15rem;
+  }
+  .about .container .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-title {
+    text-align: center;
+  }
+  .about .lead {
+    width: 100%;
+    text-align: center;
+  }
+  /* contact section */
+  .contact {
+    height: auto;
+  }
+  .contact .container .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-title {
+    text-align: center;
+  }
+  .contact .lead {
+    width: 100%;
+    text-align: center;
+  }
 }
+
 @media (max-width: 600px) {
   /* Services Section */
   .services-wrapper {
     grid-template-columns: 300px;
     grid-template-rows: repeat(9, 300px);
+  }
+  .about-title h2 {
+    font-size: 3rem;
+  }
+  .contact .about-title {
+    margin: 10rem 0 3rem;
   }
 }
 @media (max-width: 400px) {

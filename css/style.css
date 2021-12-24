@@ -130,6 +130,7 @@ body::-webkit-scrollbar {
   display: grid;
   text-align: center;
   place-items: center;
+  border-left: 3px solid #333;
 }
 .img-wrapper > img {
   width: 100%;
@@ -232,4 +233,54 @@ body::-webkit-scrollbar {
 }
 .service-box:hover {
   background: var(--cta);
+}
+
+/* About Section */
+/********************************/
+.about {
+  height: 75vh;
+  background: url(../images/RectLight.svg);
+  background-position: top;
+  padding: 5rem 0;
+}
+.about-title {
+  margin: 10rem 0 3rem;
+}
+.about-title h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--cta);
+}
+.about .lead {
+  width: 75%;
+  font-size: 1.7rem;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+/* Contact Section */
+/********************************/
+.contact {
+  height: 100vh;
+  background: linear-gradient(120deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url(../images/scyscraper.jpg);
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 5rem 0;
+}
+.about-title {
+  margin: 15rem 0 3rem;
+}
+.about-title h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--cta);
+}
+.contact .lead {
+  width: 75%;
+  font-size: 1.7rem;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  margin-bottom: 5rem;
 }

@@ -33,6 +33,9 @@
     <link rel="stylesheet" href="css/animation.css" />
   </head>
   <body>
+    <span id="toTopButton">
+      <i class="fa fa-arrow-up"></i>
+    </span>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <div class="container">
@@ -68,12 +71,7 @@
                 my-md-1 my-sm-1
               "
             >
-              <a
-                class="nav-link active"
-                data-section="header"
-                href="/index.html"
-                >Home</a
-              >
+              <a class="nav-link active" href="/index.html">Home</a>
             </li>
             <li
               class="
@@ -84,7 +82,7 @@
                 my-md-1 my-sm-1
               "
             >
-              <a class="nav-link" href="">services</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li
               class="
@@ -95,7 +93,7 @@
                 my-md-1 my-sm-1
               "
             >
-              <a class="nav-link" href="">about us</a>
+              <a class="nav-link" href="#services">services</a>
             </li>
             <li
               class="
@@ -106,14 +104,25 @@
                 my-md-1 my-sm-1
               "
             >
-              <a class="nav-link" href="">contact</a>
+              <a class="nav-link" href="#about">about us</a>
+            </li>
+            <li
+              class="
+                nav-item
+                pr-lg-3 pr-md-2 pr-sm-0
+                pl-lg-3 pl-md-2 pl-sm-0
+                text-center
+                my-md-1 my-sm-1
+              "
+            >
+              <a class="nav-link" href="#contact">contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- Hero section -->
-    <header class="hero">
+    <header class="hero section" id="home">
       <div class="container w-100 h-100">
         <div class="content center-col">
           <img src="https://via.placeholder.com/150.png" alt="" class="logo" />
@@ -133,7 +142,7 @@
     <!-- End of hero section -->
 
     <!-- Our mission & vision section -->
-    <section class="mission-vision py-5">
+    <section class="mission-vision py-5 section">
       <svg
         width="50%"
         height="50%"
@@ -179,7 +188,7 @@
     <!-- End of Our mission & vision section -->
 
     <!-- Images section -->
-    <section class="images-sec">
+    <section class="images-sec section" id="gallery">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-4 col md-4 col-sm-7 col-7 p-0 h-100 mx-auto">
@@ -206,7 +215,7 @@
     <!-- End of images section-->
 
     <!-- Services Section -->
-    <section class="services p-10">
+    <section class="services p-10 section" id="services">
       <div class="services-title mx-auto w-100 text-center">
         <h2 class="text-uppercase">Services</h2>
       </div>
@@ -324,6 +333,48 @@
       </div>
     </section>
     <!-- End of Services Section -->
+
+    <!-- About section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 col-lg-7 col-md-7 col-sm-7">
+            <div class="about-title">
+              <h2 class="text-uppercase">About arqam</h2>
+            </div>
+            <p class="lead">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum,
+              odit excepturi voluptates molestiae repellat qui ad porro
+              distinctio iusto amet fugit vitae sint facilis, dolores obcaecati
+              laudantium consequuntur praesentium corporis! Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Sed, corporis?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of About section -->
+
+    <!-- contact section -->
+    <footer class="contact section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 col-lg-7 col-md-7 col-sm-7">
+            <div class="about-title">
+              <h2 class="text-uppercase">Contact</h2>
+            </div>
+            <p class="lead">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum,
+              odit excepturi voluptates molestiae repellat qui ad porro
+              distinctio iusto amet fugit vitae sint facilis, dolores obcaecati
+              laudantium consequuntur praesentium corporis! Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Sed, corporis?
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End of contact section -->
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
