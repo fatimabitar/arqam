@@ -31,8 +31,52 @@
     <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="css/basics.css" />
     <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/preloader.css" />
   </head>
   <body>
+    <!-- <div class="overlay first"></div>
+    <div class="overlay second"></div>
+    <div class="overlay third"></div> -->
+
+    <div id="preloader-container">
+      <p>ARQAM</p>
+      <svg
+        class="preloader"
+        x="0"
+        y="0"
+        width="250"
+        height="250"
+        viewBox="0 0 250 250"
+        overflow="visible"
+      >
+        <g>
+          <circle
+            cx="125"
+            cy="125"
+            r="125"
+            stroke="white"
+            stroke-width="18"
+            stroke-dasharray="80 312.69"
+          ></circle>
+          <circle
+            cx="125"
+            cy="125"
+            r="125"
+            stroke="gray"
+            stroke-width="12"
+            stroke-dasharray="80 312.69"
+          ></circle>
+          <circle
+            cx="125"
+            cy="125"
+            r="125"
+            stroke="white"
+            stroke-width="8"
+            stroke-dasharray="50 342.69"
+          ></circle>
+        </g>
+      </svg>
+    </div>
     <span id="toTopButton">
       <i class="fa fa-arrow-up"></i>
     </span>
@@ -192,25 +236,46 @@
     <!-- End of Our mission & vision section -->
 
     <!-- Images section -->
-    <section class="images-sec section" id="gallery">
-      <div class="container-fluid">
+    <section class="images-sec section p-10 mt-5" id="gallery">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-4 col md-4 col-sm-7 col-7 p-0 h-100 mx-auto">
-            <div class="img-wrapper img-1">
-              <img src="https://via.placeholder.com/300x400.jpg" alt="" />
-              <p class="lead">Lorem ipsum dolor sit amet.</p>
+          <div class="images-row row-1">
+            <div class="img-div">
+              <img src="https://via.placeholder.com/300x200.jpg" alt="" />
+            </div>
+            <div class="text-div">
+              <p class="lead">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Necessitatibus et architecto dolorum accusantium libero magni
+                ipsum veritatis velit quibusdam? Numquam unde quidem provident
+                nam, quisquam error quia commodi culpa vitae?
+              </p>
             </div>
           </div>
-          <div class="col-lg-4 col md-4 col-sm-7 col-7 p-0 h-100 mx-auto">
-            <div class="img-wrapper img-2">
-              <img src="https://via.placeholder.com/300x400.jpg" alt="" />
-              <p class="lead">Lorem ipsum dolor sit amet.</p>
+          <div class="images-row row-2">
+            <div class="text-div">
+              <p class="lead">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Necessitatibus et architecto dolorum accusantium libero magni
+                ipsum veritatis velit quibusdam? Numquam unde quidem provident
+                nam, quisquam error quia commodi culpa vitae?
+              </p>
+            </div>
+            <div class="img-div">
+              <img src="https://via.placeholder.com/300x200.jpg" alt="" />
             </div>
           </div>
-          <div class="col-lg-4 col md-4 col-sm-7 col-7 p-0 h-100 mx-auto">
-            <div class="img-wrapper img-3">
-              <img src="https://via.placeholder.com/300x400.jpg" alt="" />
-              <p class="lead">Lorem ipsum dolor sit amet.</p>
+          <div class="images-row row-3">
+            <div class="img-div">
+              <img src="https://via.placeholder.com/300x200.jpg" alt="" />
+            </div>
+            <div class="text-div">
+              <p class="lead">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Necessitatibus et architecto dolorum accusantium libero magni
+                ipsum veritatis velit quibusdam? Numquam unde quidem provident
+                nam, quisquam error quia commodi culpa vitae?
+              </p>
             </div>
           </div>
         </div>

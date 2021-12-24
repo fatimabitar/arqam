@@ -62,6 +62,12 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.center-col-l {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
 
 .btn {
   color: #fff;

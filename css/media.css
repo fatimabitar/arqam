@@ -18,6 +18,9 @@
     height: auto;
     padding: 10rem 0 15rem;
   }
+  .about .about-title {
+    margin: 5rem 0 3rem;
+  }
   /* contact section */
   .contact {
     height: auto;
@@ -36,9 +39,14 @@
   .images-sec {
     padding: 5rem 0 2rem;
   }
-  .img-wrapper {
-    margin: 0 auto 3rem;
-    width: 70%;
+  .images-sec .text-div{
+    align-self: center;
+  }
+  .images-sec .lead{
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    margin-top: 0rem;
   }
   /* Services Section */
   .services-wrapper {
@@ -75,7 +83,7 @@
   .about {
     background-size: cover;
     height: auto;
-    padding: 10rem 0 15rem;
+    padding: 5rem 0 15rem;
   }
   .about .container .row {
     display: flex;
@@ -88,6 +96,20 @@
   .about .lead {
     width: 100%;
     text-align: center;
+  }
+  /* Img sections */
+  .images-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .images-row:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .images-sec .lead{
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
   }
   /* contact section */
   .contact {
@@ -115,6 +137,9 @@
   }
   .about-title h2 {
     font-size: 3rem;
+  }
+  .about .about-title {
+    margin: 5rem 0 3rem;
   }
   .contact .about-title {
     margin: 10rem 0 3rem;

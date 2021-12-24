@@ -7,6 +7,7 @@
   /* Other */
   --transition: all 0.5s ease;
 }
+
 body {
   background-color: var(--black);
   color: var(--white);
@@ -141,29 +142,32 @@ body::-webkit-scrollbar {
 /* Images Section */
 /***********************************/
 .images-sec {
-  background: var(--light-black);
+  background: url(../images/RectLight.svg);
+  background-size: cover;
 }
-.img-wrapper {
+.images-sec img {
   width: 100%;
-  height: 100%;
-  display: grid;
-  text-align: center;
-  place-items: center;
-  border-left: 3px solid #333;
 }
-.img-wrapper > img {
+.images-sec .lead {
+  width: 60%;
+  font-size: 1.7rem;
+  line-height: 1.6;
+}
+.images-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 6rem;
+}
+.img-div {
+  width: 45%;
+}
+.img-div > img {
   width: 100%;
-  height: 100%;
-  grid-row: 1;
-  grid-column: 1;
 }
-.img-wrapper > .lead {
-  grid-row: 1;
-  grid-column: 1;
-  font-size: 20px;
-  font-weight: 800;
-  color: #fff;
-  width: 50%;
+.text-div {
+  width: 45%;
+  display: flex;
+  align-items: center;
 }
 /* Services Section */
 /************************************/
