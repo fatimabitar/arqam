@@ -105,13 +105,13 @@ body {
 #toTopButton {
   position: fixed;
   bottom: 30px;
-  right: 50px;
-  color: #ddb12d;
+  right: 30px;
+  color: #333;
   display: inline-block;
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: #141414;
+  background: #eee;
   z-index: 1000;
   text-align: center;
   line-height: 40px;

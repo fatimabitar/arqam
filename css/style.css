@@ -57,7 +57,7 @@ body::-webkit-scrollbar {
 /******************************************************/
 .hero {
   height: 100vh;
-  background: linear-gradient(120deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(120deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../images/scyscraper.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -76,6 +76,24 @@ body::-webkit-scrollbar {
   width: 50%;
   font-size: 1.6rem;
   margin-bottom: 2rem;
+}
+.ml7 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.7em;
+}
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
 }
 
 /* Mission and vision section */
@@ -241,7 +259,7 @@ body::-webkit-scrollbar {
 .about {
   height: 75vh;
   background: url(../images/RectLight.svg);
-  background-position: top;
+  background-position: bottom;
   padding: 5rem 0;
 }
 .about .about-title {

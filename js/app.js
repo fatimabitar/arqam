@@ -1,29 +1,31 @@
-// const svgText = document.querySelector(".svg-text");
+//GSAP animations
 
-// for (let i = 0; i < svgText.length; i++) {
-//   console.log(`Letter ${i} is ${svgText[i].getTotalLength()}`+"555555");
-// }
-
-
-//back to top
-let backToTop = document.getElementById("toTopButton");
-
-window.addEventListener("scroll", scrollFunction);
-
-function scrollFunction() {
-  if (window.pageYOffset > 500) {
-    //Show Back To Top button
-    backToTop.style.transform = "scale(1)";
-  } else {
-    // Hide Back To Top button
-    backToTop.style.transform = "scale(0)";
-  }
-}
-
-backToTop.onclick = () => {
-  window.scrollTo({
-    left: 0,
-    top: 0,
-    behavior: "smooth",
+//Hero animations
+let tl = gsap.timeline({
+  defaults: {
+    duration: 1,
+    ease: Power1.easeInOut,
+    scrub: 1,
+  },
+  scrollTrigger: {
+    trigger: ".hero",
+    start: "top top",
+    end: "bottom bottom",
+  },
+  smoothChildTiming: true,
+});
+tl.from(".navbar", {
+  y: -200,
+})
+  .from(".logo", {
+    scale: 0,
+  })
+  .from(".hero .lead", {
+    y: 30,
+    opacity: 0,
+    delay: 1,
+  })
+  .from(".hero .btn", {
+    opacity: 0,
+    ease: "easeOut",
   });
-};
