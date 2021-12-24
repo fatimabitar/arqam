@@ -200,11 +200,11 @@ body::-webkit-scrollbar {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: var(--transition);
-  -webkit-transition: var(--transition);
-  -moz-transition: var(--transition);
-  -ms-transition: var(--transition);
-  -o-transition: var(--transition);
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
 }
 .service-box::before {
   content: "";
@@ -237,11 +237,6 @@ body::-webkit-scrollbar {
 }
 .service-box .contant {
   display: none;
-  transition: var(--transition);
-  -webkit-transition: var(--transition);
-  -moz-transition: var(--transition);
-  -ms-transition: var(--transition);
-  -o-transition: var(--transition);
 }
 .service-box .contant p {
   font-size: 1.6rem;
@@ -251,19 +246,19 @@ body::-webkit-scrollbar {
   display: block;
 }
 .service-box:hover {
-  background: var(--cta);
+  background: #222;
 }
 
 /* About Section */
 /********************************/
 .about {
-  height: 75vh;
+  height: 100vh;
   background: url(../images/RectLight.svg);
   background-position: bottom;
   padding: 5rem 0;
 }
 .about .about-title {
-  margin: 10rem 0 3rem;
+  margin: 15rem 0 3rem;
 }
 .about .about-title h2 {
   font-size: 4rem;
