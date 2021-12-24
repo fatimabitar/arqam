@@ -48,7 +48,8 @@ body::-webkit-scrollbar {
   -o-transition: var(--transition);
 }
 .nav-link:hover::before,
-.nav-link.active::before {
+.nav-link.active::before,
+.nav-link:focus::before {
   width: 100%;
 }
 
@@ -243,10 +244,10 @@ body::-webkit-scrollbar {
   background-position: top;
   padding: 5rem 0;
 }
-.about-title {
+.about .about-title {
   margin: 10rem 0 3rem;
 }
-.about-title h2 {
+.about .about-title h2 {
   font-size: 4rem;
   font-weight: 800;
   color: var(--cta);
@@ -269,7 +270,7 @@ body::-webkit-scrollbar {
   background-size: cover;
   padding: 5rem 0;
 }
-.about-title {
+.contact .about-title {
   margin: 15rem 0 3rem;
 }
 .about-title h2 {

@@ -26,23 +26,23 @@ const sections = document.querySelectorAll(".section");
 // };
 
 // var removeAllActiveClasses = function () {
-//   document.querySelectorAll("nav a").forEach((el) => {
+//   document.querySelectorAll("nav-links").forEach((el) => {
 //     el.classList.remove("active");
 //   });
 // };
 
 // var addActiveClass = function (id) {
 //   // console.log(id);
-//   var selector = `nav a[href="#${id}"]`;
-//   document.querySelector(selector).classList.add("active");
+//   var selector = `links[href="#${id}"]`;
+//   selector.classList.add("active");
 // };
-onscroll = function(){
+onscroll = function () {
   if (window.pageYOffset > 500) {
     navbar.classList.add("bg-dark");
   } else {
     navbar.classList.remove("bg-dark");
   }
-}
+};
 
 links.forEach((link) => {
   link.addEventListener("click", (e) => {
