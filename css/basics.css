@@ -168,6 +168,8 @@ body {
 }
 svg text {
   position: absolute;
+  left: 50%;
+  top: 50%;
   stroke: #fff;
   font-size: 150px;
   font-weight: 700;

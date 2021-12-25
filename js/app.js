@@ -120,7 +120,7 @@ let tl4 = gsap.timeline({
 
 tl4
   .from(".services-title h2", {
-    y: -100,
+    scaleY: 0,
     opacity: 0,
   })
   .from(".box-1 , .box-2 , .box-3", {
