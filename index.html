@@ -33,8 +33,8 @@
     <link rel="stylesheet" href="css/animation.css" />
     <link rel="stylesheet" href="css/preloader.css" />
   </head>
-  <body class="overflow-x-hidden">
-    <div id="loader">
+  <body class="overflow-hidden">
+    <div id="loader" class="overflow-hidden">
       <svg view-box="0 0 1250 600" width="100%" height="65%">
         <text x="50%" y="80%" fill="transparent" text-anchor="middle">
           ARQAM
@@ -49,7 +49,7 @@
     </span>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-      <div class="container">
+      <div class="container overflow-hidden">
         <a
           class="navbar-brand text-uppercase navbar-logo text-uppercase"
           href="/"
@@ -133,7 +133,7 @@
       </div>
     </nav>
     <!-- Hero section -->
-    <header class="hero section" id="home">
+    <header class="hero section overflow-hidden" id="home">
       <div class="container w-100 h-100">
         <div class="content center-col">
           <img src="https://via.placeholder.com/150.png" alt="" class="logo" />
@@ -153,7 +153,7 @@
     <!-- End of hero section -->
 
     <!-- Our mission & vision section -->
-    <section class="mission-vision">
+    <section class="mission-vision overflow-hidden">
       <svg
         width="50%"
         height="50%"
@@ -169,7 +169,7 @@
         />
       </svg>
 
-      <div class="container w-100 h-100 center">
+      <div class="container w-100 h-100 center overflow-hidden">
         <div class="row">
           <div class="col-12">
             <div class="mission">
@@ -199,9 +199,9 @@
     <!-- End of Our mission & vision section -->
 
     <!-- Images section -->
-    <section class="images-sec section p-10 mt-5" id="gallery">
-      <div class="container">
-        <div class="row">
+    <section class="images-sec section p-10 mt-5 overflow-hidden" id="gallery">
+      <div class="container overflow-hidden">
+        <div class="row overflow-hidden position-relative">
           <div class="images-row row-1">
             <div class="img-div">
               <img src="https://via.placeholder.com/300x200.jpg" alt="" />
@@ -247,12 +247,14 @@
     <!-- End of images section-->
 
     <!-- Services Section -->
-    <section class="services p-10 section" id="services">
-      <div class="services-title mx-auto w-100 text-center">
+    <section class="services p-10 section overflow-hidden" id="services">
+      <div class="services-title mx-auto w-100 text-center overflow-hidden">
         <h2 class="text-uppercase">Services</h2>
       </div>
-      <div class="container-fluid d-flex justify-content-center">
-        <div class="services-wrapper">
+      <div
+        class="container-fluid d-flex justify-content-center overflow-hidden"
+      >
+        <div class="services-wrapper overflow-hidden position-relative">
           <div class="service-box box-1">
             <div class="card-content">
               <h3 class="card-title text-uppercase">Lorem, ipsum dolor.</h3>
@@ -340,8 +342,8 @@
     <!-- End of Services Section -->
 
     <!-- About section -->
-    <section class="about section" id="about">
-      <div class="container">
+    <section class="about section overflow-hidden" id="about">
+      <div class="container overflow-hidden">
         <div class="row">
           <div class="col-10 col-lg-7 col-md-7 col-sm-7 about-trigger">
             <div class="about-title">
@@ -361,8 +363,8 @@
     <!-- End of About section -->
 
     <!-- contact section -->
-    <footer class="contact section" id="contact">
-      <div class="container">
+    <footer class="contact section overflow-hidden" id="contact">
+      <div class="container overflow-hidden">
         <div class="row">
           <div class="col-10 col-lg-7 col-md-7 col-sm-7">
             <div class="about-title">
@@ -406,6 +408,5 @@
     <script src="js/app.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/loader.js"></script>
-
   </body>
 </html>

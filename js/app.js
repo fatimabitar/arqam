@@ -34,7 +34,6 @@ let tl1 = gsap.timeline({
     duration: 0.5,
     ease: Power1.easeInOut,
   },
-  smoothChildTiming: true,
   delay: 3.6,
 });
 tl1
@@ -68,7 +67,6 @@ let tl2 = gsap.timeline({
     start: "-=200",
     end: "+=200",
   },
-  smoothChildTiming: true,
 });
 
 tl2
@@ -92,23 +90,19 @@ let tl3 = gsap.timeline({
     start: "-=250",
     end: "+=1200",
   },
-  smoothChildTiming: true,
 });
 tl3
   .from(".row-1", {
     opacity: 0,
-    x: 1000,
-    stagger: 0.2,
+    xPercent: 50,
   })
   .from(".row-2", {
     opacity: 0,
-    x: -1000,
-    stagger: 0.2,
+    xPercent: -50,
   })
   .from(".row-3", {
     opacity: 0,
-    x: 1000,
-    stagger: 0.2,
+    xPercent: 50,
   });
 /* services secion*/
 let tl4 = gsap.timeline({
@@ -129,19 +123,22 @@ tl4
     opacity: 0,
   })
   .from(".box-1 , .box-2 , .box-3", {
-    x: "1300",
+    xPercent: 100,
+    opacity: 0,
   })
   .from(
     ".box-4 , .box-5 , .box-6",
     {
-      x: "-1300",
+      xPercent: -100,
+      opacity: 0,
     },
     "<"
   )
   .from(
     ".box-7 , .box-8 , .box-9",
     {
-      x: "1300",
+      xPercent: 100,
+      opacity: 0,
     },
     "<"
   );

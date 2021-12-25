@@ -143,6 +143,7 @@ body::-webkit-scrollbar {
 .images-sec {
   background: url(../images/RectLight.svg);
   background-size: cover;
+  overflow: hidden;
 }
 .images-sec img {
   width: 100%;
@@ -156,6 +157,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 6rem;
+  overflow-x: hidden;
 }
 .img-div {
   width: 45%;
@@ -190,6 +192,8 @@ body::-webkit-scrollbar {
   gap: 20px;
   place-items: center;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 .service-box {
   width: 100%;
