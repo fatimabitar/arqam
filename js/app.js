@@ -85,7 +85,7 @@ tl2
 /* Images secion*/
 let tl3 = gsap.timeline({
   defaults: {
-    duration: 0.7,
+    duration: 0.5,
     ease: Power1.easeInOut,
   },
   scrollTrigger: {
@@ -140,11 +140,11 @@ tl4
     y: 30,
     opacity: 0,
   })
-  .from(".service-box", {
-    y: 100,
-    opacity: 0,
-    stagger: 0.3,
-  });
+  // .from(".service-box", {
+  //   y: 100,
+  //   opacity: 0,
+  //   stagger: 0.3,
+  // });
 
 /* About */
 let tl5 = gsap.timeline({
