@@ -123,7 +123,7 @@ tl3
 /* services secion*/
 let tl4 = gsap.timeline({
   defaults: {
-    duration: 0.5,
+    duration: 0.3,
     ease: Power1.easeIn,
   },
   scrollTrigger: {
