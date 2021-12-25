@@ -17,14 +17,13 @@
 }
 .first {
   left: 0;
-  width:  50%;
+  width: 50%;
 }
 
 .second {
   left: 50%;
   width: 50%;
 }
-
 
 body {
   background-color: var(--black);
@@ -95,24 +94,6 @@ body::-webkit-scrollbar {
   width: 50%;
   font-size: 1.6rem;
   margin-bottom: 2rem;
-}
-.ml7 {
-  position: relative;
-  font-weight: 900;
-  font-size: 3.7em;
-}
-.ml7 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.2em;
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
-  overflow: hidden;
-}
-.ml7 .letter {
-  transform-origin: 0 100%;
-  display: inline-block;
-  line-height: 1em;
 }
 
 /* Mission and vision section */
@@ -196,26 +177,25 @@ body::-webkit-scrollbar {
 }
 .services-title h2 {
   font-size: 5rem;
-  opacity: 0.5;
+  opacity: 0.8;
   margin: 2rem 0 5rem;
+  color: #ddb12d;
+  font-weight: 800;
 }
+
 .services-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 310px);
   grid-template-rows: repeat(3, 310px);
-  gap: 15px;
+  gap: 20px;
   place-items: center;
   text-align: center;
 }
 .service-box {
   width: 100%;
   height: 100%;
-  background: #333;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  background: url("../images/RectLight.svg");
+  background-size: cover;
   position: relative;
   cursor: pointer;
   display: flex;
@@ -227,48 +207,59 @@ body::-webkit-scrollbar {
   -moz-transition: all ease 0.5s;
   -ms-transition: all ease 0.5s;
   -o-transition: all ease 0.5s;
+  overflow: hidden;
 }
 .service-box::before {
   content: "";
+  width: 100px;
+  height: 150%;
+  background: #7e7d7b13;
   position: absolute;
-  left: 5%;
-  top: 5%;
-  background: var(--cta);
-  height: 5px;
-  width: 75px;
+  left: 50%;
+  top: -35%;
+  transform: translateX(-50%) rotate(45deg);
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  -moz-transform: translateX(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) rotate(45deg);
+  -o-transform: translateX(-50%) rotate(45deg);
+  z-index: 1;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  transform-origin: top;
 }
-.service-box::after {
-  content: "";
-  position: absolute;
-  left: 5%;
-  top: 6%;
-  background: var(--cta);
-  height: 75px;
-  width: 5px;
+.card-content {
+  z-index: 2;
+  padding: 1rem 0;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
-.card-title {
-  width: 100%;
+.card-content h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
 }
-.card-title h3 {
-  font-size: 2rem;
-  padding-top: 2rem;
-}
-.card-title p {
+.card-content p {
   font-size: 1.6rem;
-  padding: 1rem 0 1.5rem;
-}
-.service-box .contant {
+  padding: 0.5rem 0 0;
   display: none;
+  font-weight: 500;
 }
-.service-box .contant p {
-  font-size: 1.6rem;
-  padding: 0 2rem;
+.service-box:hover.service-box::before {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  top: -25%;
+  left: 35%;
 }
-.service-box:hover .contant {
+.service-box:hover .card-content p {
   display: block;
-}
-.service-box:hover {
-  background: #222;
 }
 
 /* About Section */

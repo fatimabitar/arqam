@@ -10,16 +10,22 @@ function removeElement(element) {
 }
 //  Preloader
 const tl = gsap.timeline();
-tl
-  .to(".first", 0.8, {
-    left: "-100%",
-    ease: Power1.easeInOut,
-  })
+tl.to(".first", 1, {
+  left: "-100%",
+  ease: Power1.easeInOut,
+  delay: 3,
+})
   .call(removeElement(".first"))
-  .to(".second", 0.5, {
-    left: "100%",
-    ease: Power1.easeInOut,
-  },"0")
+  .to(
+    ".second",
+    1,
+    {
+      left: "100%",
+      ease: Power1.easeInOut,
+      delay: 3,
+    },
+    "0"
+  )
   .call(removeElement(".second"));
 
 // //Hero animations
@@ -29,7 +35,7 @@ let tl1 = gsap.timeline({
     ease: Power1.easeInOut,
   },
   smoothChildTiming: true,
-  delay: 0.5,
+  delay: 3.6,
 });
 tl1
   .from(".navbar", {
@@ -52,20 +58,19 @@ tl1
   });
 
 /* Mission and vision */
-
 let tl2 = gsap.timeline({
   defaults: {
     duration: 0.5,
-    ease: Power1.easeIn,
-    markers: true,
+    ease: Power1.easeInOut,
   },
   scrollTrigger: {
     trigger: ".mission-vision",
-    start: "top top",
-    end: "0% 0%",
+    start: "-=200",
+    end: "+=200",
   },
   smoothChildTiming: true,
 });
+
 tl2
   .from(".mission", {
     y: 25,
@@ -76,7 +81,7 @@ tl2
     opacity: 0,
   });
 
-/* Gallery */
+/* Images secion*/
 let tl3 = gsap.timeline({
   defaults: {
     duration: 1,
@@ -84,8 +89,8 @@ let tl3 = gsap.timeline({
   },
   scrollTrigger: {
     trigger: ".images-sec",
-    start: "top top",
-    end: "0% 0%",
+    start: "-=250",
+    end: "+=1200",
   },
   smoothChildTiming: true,
 });
@@ -105,121 +110,83 @@ tl3
     x: 1000,
     stagger: 0.2,
   });
+/* services secion*/
+let tl4 = gsap.timeline({
+  defaults: {
+    duration: 0.7,
+    ease: Power2.easeInOut,
+  },
+  scrollTrigger: {
+    trigger: ".services",
+    start: "-=300",
+    end: "+=500",
+  },
+});
 
-/* Services */
-// let tl4 = gsap.timeline({
-//   defaults: {
-//     duration: 0.5,
-//     ease: Power1.easeInOut,
-//   },
-//   scrollTrigger: {
-//     trigger: ".services",
-//     start: "top top",
-//     end: "0% 0%",
-//   },
+tl4
+  .from(".services-title h2", {
+    y: -100,
+    opacity: 0,
+  })
+  .from(".box-1 , .box-2 , .box-3", {
+    x: "1300",
+  })
+  .from(
+    ".box-4 , .box-5 , .box-6",
+    {
+      x: "-1300",
+    },
+    "<"
+  )
+  .from(
+    ".box-7 , .box-8 , .box-9",
+    {
+      x: "1300",
+    },
+    "<"
+  );
 
-//   smoothChildTiming: true,
-// });
-// tl4
-//   .from(".services-title h2", {
-//     y: -100,
-//     opacity: 0,
-//   })
-//   .from(".services-title h2", {
-//     y: -100,
-//     opacity: 0,
-//   })
-//   .from(".box-1", {
-//     x: "2000",
-//   },"<")
-//   .from(".box-2", {
-//     x: "1500",
-//   })
-//   .from(".box-3", {
-//     x: "800",
-//   },"<");
+/* About */
+let tl5 = gsap.timeline({
+  defaults: {
+    duration: 0.5,
+    ease: Power1.easeInOut,
+  },
+  scrollTrigger: {
+    trigger: ".about",
+    start: "-=300",
+    end: "+=500",
+  },
+  smoothChildTiming: true,
+});
+tl5
+  .from(".about .about-title", {
+    scaleY: 0,
+    opacity: 0,
+  })
+  .from(".about .lead", {
+    scaleY: 0,
+    opacity: 0,
+  });
 
-// tl3
-//   .from(".services-title h2", {
-//     y: -100,
-//     opacity: 0,
-//   })
-//   .from(".box-1", {
-//     x: "2000",
-//   })
-//   .from(".box-2", {
-//     x: "1500",
-//   })
-//   .from(".box-3", {
-//     x: "800",
-//   })
-//   .from(".box-4", {
-//     x: "-1000",
-//   })
-//   .from(".box-5", {
-//     x: "-1500",
-//   })
-//   .from(".box-6", {
-//     x: -2000,
-//     duration: 0.5,
-//   })
-//   .from(".box-7", {
-//     x: "2000",
-//   })
-//   .from(".box-8", {
-//     x: "1500",
-//   })
-//   .from(".box-9", {
-//     x: "800",
-//     duration: 0.5,
-//   });
-
-// /* About */
-// let tl4 = gsap.timeline({
-//   defaults: {
-//     duration: 5,
-//     ease: Power1.easeInOut,
-//   },
-//   scrollTrigger: {
-//     trigger: ".about",
-//     scrub: 2,
-//     start: "top top",
-//     end: "0% 0%",
-//     pin: true,
-//   },
-//   smoothChildTiming: true,
-// });
-// tl4
-//   .from(".about .about-title", {
-//     y: 25,
-//     opacity: 0,
-//   })
-//   .from(".about .lead", {
-//     y: 25,
-//     opacity: 0,
-//   });
-
-// /* Contact */
-// let tl5 = gsap.timeline({
-//   defaults: {
-//     duration: 5,
-//     ease: Power1.easeInOut,
-//   },
-//   scrollTrigger: {
-//     trigger: ".contact",
-//     scrub: 2,
-//     start: "top top",
-//     end: "0% 0%",
-//     pin: true,
-//   },
-//   smoothChildTiming: true,
-// });
-// tl5
-//   .from(".contact .about-title", {
-//     y: 25,
-//     opacity: 0,
-//   })
-//   .from(".contact .lead", {
-//     y: 25,
-//     opacity: 0,
-//   });
+/* Contact */
+let tl6 = gsap.timeline({
+  defaults: {
+    duration: 0.5,
+    ease: Power1.easeInOut,
+  },
+  scrollTrigger: {
+    trigger: ".contact",
+    start: "-=300",
+    end: "+=600",
+  },
+});
+tl6
+  .from(".contact .about-title", {
+    scaleY: 0,
+    opacity: 0,
+  })
+  .from(".contact .lead", {
+    scaleY: 0,
+    opacity: 0,
+  });
