@@ -60,65 +60,117 @@ tl1
   });
 
 /* Mission and vision */
-let tl2 = gsap.timeline({
-  defaults: {
-    duration: 0.5,
-    ease: Power1.easeInOut,
-  },
+// let tl2 = gsap.timeline({
+//   defaults: {
+//     duration: 0.5,
+//     ease: Power1.easeInOut,
+//   },
+//   scrollTrigger: {
+//     trigger: ".mission-vision",
+//     start: "-=200",
+//     end: "+=300",
+//   },
+// });
+
+gsap.from(".mission", {
+  y: 25,
+  opacity: 0,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".mission-vision",
     start: "-=200",
     end: "+=300",
   },
 });
-
-tl2
-  .from(".mission", {
-    y: 25,
-    opacity: 0,
-  })
-  .from(".vision", {
-    y: 25,
-    opacity: 0,
-  });
+gsap.from(".vision", {
+  y: 25,
+  opacity: 0,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: ".mission-vision",
+    start: "-=200",
+    end: "+=300",
+  },
+  delay: 0.2,
+});
 
 /* Images secion*/
-let tl3 = gsap.timeline({
-  defaults: {
-    duration: 0.8,
-    ease: Power1.easeInOut,
-  },
+// let tl3 = gsap.timeline({
+//   defaults: {
+//     duration: 0.8,
+//     ease: Power1.easeInOut,
+//   },
+//   scrollTrigger: {
+//     trigger: ".images-sec",
+//     start: "-=300",
+//     end: "+=1200",
+//   },
+// });
+gsap.from(".row-1 .img-div", {
+  opacity: 0,
+  yPercent: 50,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".images-sec",
     start: "-=300",
     end: "+=1200",
   },
 });
-tl3
-  .from(".row-1 .img-div", {
-    opacity: 0,
-    y: 310,
-  })
-  .from(".row-1 .text-div", {
-    opacity: 0,
-    y: 50,
-  })
-  .from(".row-2 .img-div", {
-    opacity: 0,
-    y: 310,
-  })
-  .from(".row-2 .text-div", {
-    opacity: 0,
-    y: 50,
-  })
-  .from(".row-3 .img-div", {
-    opacity: 0,
-    y: 310,
-  })
-  .from(".row-3 .text-div", {
-    opacity: 0,
-    y: 50,
-  });
+gsap.from(".row-1 .text-div", {
+  opacity: 0,
+  y: 50,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: ".images-sec",
+    start: "-=300",
+    end: "+=1200",
+  },
+  delay: 0.5,
+});
+gsap.from(".row-2 .img-div", {
+  opacity: 0,
+  yPercent: 50,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: ".images-sec",
+    start: "-=300",
+    end: "+=1200",
+  },
+  delay: 1,
+});
+gsap.from(".row-2 .text-div", {
+  opacity: 0,
+  y: 50,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: ".images-sec",
+    start: "-=300",
+    end: "+=1200",
+  },
+  delay: 1.5,
+});
+gsap.from(".row-3 .img-div", {
+  opacity: 0,
+  yPercent: 50,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: ".images-sec",
+    start: "-=300",
+    end: "+=1200",
+  },
+  delay: 2,
+});
+gsap.from(".row-3 .text-div", {
+  opacity: 0,
+  y: 50,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: ".images-sec",
+    start: "-=300",
+    end: "+=1200",
+  },
+  delay: 2.5,
+});
 
 /* services secion*/
 
@@ -133,62 +185,97 @@ tl3
 //     end: "+=1100",
 //   },
 // });
-// tl4
 gsap.from(".services-title h2", {
-    y: 30,
-    opacity: 0,
-    scrollTrigger: ".services",
-  })
-  gsap.from(".service-box", {
-    yPercent: 10,
-    opacity: 0,
-    stagger: 0.1,
-    scrollTrigger: ".services",
-    delay: 0.3,
-  });
+  y: 30,
+  opacity: 0,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: ".services",
+    start: "-=300",
+    end: "+=1100",
+  },
+});
+gsap.from(".service-box", {
+  yPercent: 10,
+  opacity: 0,
+  stagger: 0.1,
+  duration: 0.2,
+  scrollTrigger: {
+    trigger: ".services",
+    start: "-=300",
+    end: "+=1100",
+  },
+  delay: 0.5,
+});
 
 /* About */
-let tl5 = gsap.timeline({
-  defaults: {
-    duration: 0.5,
-    ease: Power1.easeInOut,
-  },
+// let tl5 = gsap.timeline({
+//   defaults: {
+//     duration: 0.5,
+//     ease: Power1.easeInOut,
+//   },
+//   scrollTrigger: {
+//     trigger: ".about",
+//     start: "-=300",
+//     end: "+=500",
+//   },
+// });
+// tl5
+gsap.from(".about .about-title", {
+  y: 30,
+  opacity: 0,
   scrollTrigger: {
     trigger: ".about",
     start: "-=300",
     end: "+=500",
   },
-  smoothChildTiming: true,
+  duration: 0.5,
 });
-tl5
-  .from(".about .about-title", {
-    y: 30,
-    opacity: 0,
-  })
-  .from(".about .lead", {
-    y: 30,
-    opacity: 0,
-  });
+gsap.from(".about .lead", {
+  y: 30,
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".about",
+    start: "-=300",
+    end: "+=500",
+  },
+  duration: 0.5,
+  delay: 0.5,
+});
 
 /* Contact */
-let tl6 = gsap.timeline({
-  defaults: {
-    duration: 0.5,
-    ease: Power1.easeInOut,
-  },
+// let tl6 = gsap.timeline({
+//   defaults: {
+//     duration: 0.5,
+//     ease: Power1.easeInOut,
+//   },
+//   scrollTrigger: {
+//     trigger: ".contact",
+//     start: "-=800",
+//     end: "+=600",
+//   },
+//   delay: 1,
+// });
+gsap.from(".contact .about-title", {
+  y: 30,
+  opacity: 0,
   scrollTrigger: {
     trigger: ".contact",
     start: "-=800",
     end: "+=600",
   },
   delay: 1,
+  duration: 0.5,
 });
-tl6
-  .from(".contact .about-title", {
-    y: 30,
-    opacity: 0,
-  })
-  .from(".contact .lead", {
-    y: 30,
-    opacity: 0,
-  });
+gsap.from(".contact .lead", {
+  y: 30,
+  opacity: 0,
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".contact",
+    start: "-=800",
+    end: "+=600",
+  },
+  delay: 1.5,
+  duration: 0.5,
+});
