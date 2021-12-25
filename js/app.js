@@ -85,7 +85,7 @@ tl2
 /* Images secion*/
 let tl3 = gsap.timeline({
   defaults: {
-    duration: 0.8,
+    duration: 0.5,
     ease: Power1.easeInOut,
   },
   scrollTrigger: {
