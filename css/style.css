@@ -201,7 +201,7 @@ body::-webkit-scrollbar {
   display: grid;
   grid-template-columns: repeat(3, 310px);
   grid-template-rows: repeat(3, 310px);
-  gap: 20px;
+  gap: 15px;
   place-items: center;
   text-align: center;
   position: relative;
