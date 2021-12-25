@@ -85,12 +85,12 @@ tl2
 /* Images secion*/
 let tl3 = gsap.timeline({
   defaults: {
-    duration: 1,
+    duration: 0.7,
     ease: Power1.easeInOut,
   },
   scrollTrigger: {
     trigger: ".images-sec",
-    start: "-=250",
+    start: "-=300",
     end: "+=1200",
   },
 });
@@ -121,58 +121,29 @@ tl3
   });
 
 /* services secion*/
+
 let tl4 = gsap.timeline({
   defaults: {
-    duration: 0.3,
-    ease: Power1.easeIn,
+    duration: .1,
+    ease: Circ.easeOut,
   },
   scrollTrigger: {
     trigger: ".services",
     start: "-=300",
-    end: "+=500",
+    end: "+=1000",
+    pin: false,
+    yoyo:true,
   },
 });
-
 tl4
   .from(".services-title h2", {
     y: 30,
     opacity: 0,
   })
-  .from(".box-1", {
-    y: 30,
+  .from(".service-box", {
+    y: 100,
     opacity: 0,
-  })
-  .from(".box-2", {
-    y: 30,
-    opacity: 0,
-  })
-  .from(".box-3", {
-    y: 30,
-    opacity: 0,
-  })
-  .from(".box-4", {
-    y: 30,
-    opacity: 0,
-  })
-  .from(" .box-5", {
-    y: 30,
-    opacity: 0,
-  })
-  .from(".box-6", {
-    y: 30,
-    opacity: 0,
-  })
-  .from(".box-7", {
-    y: 30,
-    opacity: 0,
-  })
-  .from(".box-8", {
-    y: 30,
-    opacity: 0,
-  })
-  .from(".box-9", {
-    y: 30,
-    opacity: 0,
+    stagger: 0.3,
   });
 
 /* About */
