@@ -139,7 +139,7 @@ tl4
     opacity: 0,
   })
   .from(".service-box", {
-    yPercent: 10,
+    yPercent: 15,
     opacity: 0,
     stagger: 0.1,
   });
