@@ -69,8 +69,6 @@ let tl2 = gsap.timeline({
     trigger: ".mission-vision",
     start: "-=200",
     end: "+=300",
-    yoyo: true,
-    markers: false,
   },
 });
 
