@@ -151,7 +151,7 @@
 @media (max-width: 400px) {
   /* Hero section */
   .hero .content {
-    margin-top: 3rem;
+    margin-top: 0rem;
   }
   .hero .title {
     font-size: 2rem;
@@ -161,7 +161,7 @@
     font-size: 14px !important;
   }
   .hero .btn {
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
   }
   /* Mission and Vision */
   .mission-vision {
