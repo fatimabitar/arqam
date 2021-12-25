@@ -38,7 +38,7 @@ let tl1 = gsap.timeline({
 });
 tl1
   .from(".navbar", {
-    y: 30,
+    y: -30,
     opacity: 0,
   })
   .from(".logo", {
@@ -56,7 +56,7 @@ tl1
   .from(".hero .btn", {
     y: 30,
     opacity: 0,
-    ease: "easeOut",
+    duration: 0.2,
   });
 
 /* Mission and vision */
