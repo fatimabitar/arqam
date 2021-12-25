@@ -68,7 +68,9 @@ let tl2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".mission-vision",
     start: "-=200",
-    end: "+=200",
+    end: "+=300",
+    yoyo: true,
+    markers:true
   },
 });
 
