@@ -96,6 +96,10 @@ body::-webkit-scrollbar {
   font-size: 1.6rem;
   margin-bottom: 2rem;
 }
+.logo {
+  width: 150px;
+  height: 150px;
+}
 
 /* Mission and vision section */
 /*********************************************/
