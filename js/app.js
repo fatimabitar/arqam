@@ -122,26 +122,29 @@ tl3
 
 /* services secion*/
 
-let tl4 = gsap.timeline({
-  defaults: {
-    duration: 0.1,
-    ease: Power1.easeOut,
-  },
-  scrollTrigger: {
-    trigger: ".services",
-    start: "-=300",
-    end: "+=1100",
-  },
-});
-tl4
-  .from(".services-title h2", {
+// let tl4 = gsap.timeline({
+//   defaults: {
+//     duration: 0.1,
+//     ease: Power1.easeOut,
+//   },
+//   scrollTrigger: {
+//     trigger: ".services",
+//     start: "-=300",
+//     end: "+=1100",
+//   },
+// });
+// tl4
+gsap.from(".services-title h2", {
     y: 30,
     opacity: 0,
+    scrollTrigger: ".services",
   })
-  .from(".service-box", {
+  gsap.from(".service-box", {
     yPercent: 10,
     opacity: 0,
     stagger: 0.1,
+    scrollTrigger: ".services",
+    delay: 0.3,
   });
 
 /* About */
