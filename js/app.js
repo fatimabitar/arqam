@@ -104,11 +104,12 @@ tl3
     opacity: 0,
     xPercent: 50,
   });
+
 /* services secion*/
 let tl4 = gsap.timeline({
   defaults: {
-    duration: 0.7,
-    ease: Power2.easeInOut,
+    duration: 1,
+    ease: Power1.easeInOut,
   },
   scrollTrigger: {
     trigger: ".services",
@@ -174,9 +175,10 @@ let tl6 = gsap.timeline({
   },
   scrollTrigger: {
     trigger: ".contact",
-    start: "-=300",
+    start: "-=800",
     end: "+=600",
   },
+  delay: 1,
 });
 tl6
   .from(".contact .about-title", {

@@ -185,9 +185,6 @@ svg text {
 }
 @media (max-width: 600px) {
   svg text {
-    font-size: 30px;
-  }
-  svg{
-    width: 10px !important;
+    font-size: 90px;
   }
 }
