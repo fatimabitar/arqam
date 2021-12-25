@@ -39,10 +39,10 @@
   .images-sec {
     padding: 5rem 0 2rem;
   }
-  .images-sec .text-div{
+  .images-sec .text-div {
     align-self: center;
   }
-  .images-sec .lead{
+  .images-sec .lead {
     width: 100%;
     height: 60%;
     text-align: center;
@@ -107,7 +107,7 @@
   .images-row:nth-child(2) {
     flex-direction: column-reverse;
   }
-  .images-sec .lead{
+  .images-sec .lead {
     width: 100%;
     text-align: center;
     margin-top: 2rem !important;
