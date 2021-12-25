@@ -70,6 +70,7 @@ let tl2 = gsap.timeline({
     start: "-=200",
     end: "+=300",
     yoyo: true,
+    markers: false,
   },
 });
 
