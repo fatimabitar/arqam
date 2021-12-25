@@ -167,10 +167,12 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 6rem;
-  overflow-x: hidden;
+  overflow: hidden;
+  height: auto;
 }
 .img-div {
   width: 45%;
+  height: auto;
 }
 .img-div > img {
   width: 100%;
@@ -179,6 +181,7 @@ body::-webkit-scrollbar {
   width: 45%;
   display: flex;
   align-items: center;
+  height: auto;
 }
 /* Services Section */
 /************************************/

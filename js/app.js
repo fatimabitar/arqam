@@ -38,13 +38,15 @@ let tl1 = gsap.timeline({
 });
 tl1
   .from(".navbar", {
-    y: -200,
+    y: 30,
+    opacity: 0,
   })
   .from(".logo", {
-    scale: 0,
+    y: 30,
+    opacity: 0,
   })
   .from(".hero .title", {
-    y: -30,
+    y: 30,
     opacity: 0,
   })
   .from(".hero .lead", {
@@ -52,6 +54,7 @@ tl1
     opacity: 0,
   })
   .from(".hero .btn", {
+    y: 30,
     opacity: 0,
     ease: "easeOut",
   });
@@ -92,24 +95,36 @@ let tl3 = gsap.timeline({
   },
 });
 tl3
-  .from(".row-1", {
+  .from(".row-1 .img-div", {
     opacity: 0,
-    xPercent: 50,
+    y: 310,
   })
-  .from(".row-2", {
+  .from(".row-1 .text-div", {
     opacity: 0,
-    xPercent: -50,
+    y: 50,
   })
-  .from(".row-3", {
+  .from(".row-2 .img-div", {
     opacity: 0,
-    xPercent: 50,
+    y: 310,
+  })
+  .from(".row-2 .text-div", {
+    opacity: 0,
+    y: 50,
+  })
+  .from(".row-3 .img-div", {
+    opacity: 0,
+    y: 310,
+  })
+  .from(".row-3 .text-div", {
+    opacity: 0,
+    y: 50,
   });
 
 /* services secion*/
 let tl4 = gsap.timeline({
   defaults: {
-    duration: 1,
-    ease: Power1.easeInOut,
+    duration: 0.5,
+    ease: Power1.easeIn,
   },
   scrollTrigger: {
     trigger: ".services",
@@ -120,29 +135,45 @@ let tl4 = gsap.timeline({
 
 tl4
   .from(".services-title h2", {
-    scaleY: 0,
+    y: 30,
     opacity: 0,
   })
-  .from(".box-1 , .box-2 , .box-3", {
-    xPercent: 100,
+  .from(".box-1", {
+    y: 30,
     opacity: 0,
   })
-  .from(
-    ".box-4 , .box-5 , .box-6",
-    {
-      xPercent: -100,
-      opacity: 0,
-    },
-    "<"
-  )
-  .from(
-    ".box-7 , .box-8 , .box-9",
-    {
-      xPercent: 100,
-      opacity: 0,
-    },
-    "<"
-  );
+  .from(".box-2", {
+    y: 30,
+    opacity: 0,
+  })
+  .from(".box-3", {
+    y: 30,
+    opacity: 0,
+  })
+  .from(".box-4", {
+    y: 30,
+    opacity: 0,
+  })
+  .from(" .box-5", {
+    y: 30,
+    opacity: 0,
+  })
+  .from(".box-6", {
+    y: 30,
+    opacity: 0,
+  })
+  .from(".box-7", {
+    y: 30,
+    opacity: 0,
+  })
+  .from(".box-8", {
+    y: 30,
+    opacity: 0,
+  })
+  .from(".box-9", {
+    y: 30,
+    opacity: 0,
+  });
 
 /* About */
 let tl5 = gsap.timeline({
@@ -159,11 +190,11 @@ let tl5 = gsap.timeline({
 });
 tl5
   .from(".about .about-title", {
-    scaleY: 0,
+    y: 30,
     opacity: 0,
   })
   .from(".about .lead", {
-    scaleY: 0,
+    y: 30,
     opacity: 0,
   });
 
@@ -182,10 +213,10 @@ let tl6 = gsap.timeline({
 });
 tl6
   .from(".contact .about-title", {
-    scaleY: 0,
+    y: 30,
     opacity: 0,
   })
   .from(".contact .lead", {
-    scaleY: 0,
+    y: 30,
     opacity: 0,
   });
