@@ -208,7 +208,6 @@ body::-webkit-scrollbar {
   place-items: center;
   text-align: center;
   position: relative;
-  overflow: hidden;
 }
 .service-box {
   width: 100%;
