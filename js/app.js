@@ -11,7 +11,7 @@ function removeElement(element) {
 //  Preloader
 const tl = gsap.timeline();
 tl.to(".first", 1, {
-  left: "-100%",
+  xPercent: "-100",
   ease: Power1.easeInOut,
   delay: 3,
 })
@@ -20,7 +20,7 @@ tl.to(".first", 1, {
     ".second",
     1,
     {
-      left: "100%",
+      xPercent: "100",
       ease: Power1.easeInOut,
       delay: 3,
     },
@@ -124,7 +124,7 @@ tl3
 
 let tl4 = gsap.timeline({
   defaults: {
-    duration: .1,
+    duration: 0.01,
     ease: Circ.easeOut,
   },
   scrollTrigger: {
@@ -132,7 +132,7 @@ let tl4 = gsap.timeline({
     start: "-=300",
     end: "+=1000",
     pin: false,
-    yoyo:true,
+    yoyo: true,
   },
 });
 tl4
