@@ -31,7 +31,7 @@ tl.to(".first", 1, {
 // //Hero animations
 let tl1 = gsap.timeline({
   defaults: {
-    duration: 0.7,
+    duration: 0.5,
     ease: Power1.easeIn,
   },
   delay: 3.6,
@@ -85,7 +85,7 @@ tl2
 /* Images secion*/
 let tl3 = gsap.timeline({
   defaults: {
-    duration: 0.8,
+    duration: 0.7,
     ease: Power1.easeInOut,
   },
   scrollTrigger: {
