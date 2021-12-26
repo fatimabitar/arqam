@@ -45,19 +45,31 @@ tl1
     y: 30,
     opacity: 0,
   })
-  .from(".hero .title", {
-    y: 30,
-    opacity: 0,
-  },"+=0.1")
-  .from(".hero .lead", {
-    y: 30,
-    opacity: 0,
-  },"+=0.1")
-  .from(".hero .btn", {
-    y: 30,
-    opacity: 0,
-    duration: 0.3,
-  },"+=0.1");
+  .from(
+    ".hero .title",
+    {
+      y: 30,
+      opacity: 0,
+    },
+    "+=0.1"
+  )
+  .from(
+    ".hero .lead",
+    {
+      y: 30,
+      opacity: 0,
+    },
+    "+=0.1"
+  )
+  .from(
+    ".hero .btn",
+    {
+      y: 30,
+      opacity: 0,
+      duration: 0.3,
+    },
+    "+=0.1"
+  );
 
 /* Mission and vision */
 let tl2 = gsap.timeline({
@@ -99,50 +111,70 @@ tl3
     opacity: 0,
     y: 200,
   })
-  .from(".row-1 .text-div", {
-    opacity: 0,
-    y: 50,
-  },"+=0.1")
-  .from(".row-2 .img-div", {
-    opacity: 0,
-    y: 200,
-  },"+=0.1")
-  .from(".row-2 .text-div", {
-    opacity: 0,
-    y: 50,
-  },"+=0.1")
-  .from(".row-3 .img-div", {
-    opacity: 0,
-    y: 200,
-  },"+=0.1")
-  .from(".row-3 .text-div", {
-    opacity: 0,
-    y: 50,
-  },"+=0.1");
+  .from(
+    ".row-1 .text-div",
+    {
+      opacity: 0,
+      y: 50,
+    },
+    "+=0.1"
+  )
+  .from(
+    ".row-2 .img-div",
+    {
+      opacity: 0,
+      y: 200,
+    },
+    "+=0.1"
+  )
+  .from(
+    ".row-2 .text-div",
+    {
+      opacity: 0,
+      y: 50,
+    },
+    "+=0.1"
+  )
+  .from(
+    ".row-3 .img-div",
+    {
+      opacity: 0,
+      y: 200,
+    },
+    "+=0.1"
+  )
+  .from(
+    ".row-3 .text-div",
+    {
+      opacity: 0,
+      y: 50,
+    },
+    "+=0.1"
+  );
 
 /* services secion*/
 
-// let tl4 = gsap.timeline({
-//   defaults: {
-//     duration: 0.1,
-//     ease: Power1.easeOut,
-//   },
-//   scrollTrigger: {
-//     trigger: ".services",
-//     start: "-=300",
-//     end: "+=1100",
-//   },
-// });
-// tl4
-//   .from(".services-title h2", {
-//     y: 30,
-//     opacity: 0,
-//   })
-//   .from(".service-box", {
-//     yPercent: 15,
-//     opacity: 0,
-//     stagger: 0.1,
-//   });
+let tl4 = gsap.timeline({
+  defaults: {
+    duration: 0.1,
+    ease: Power1.easeOut,
+  },
+  scrollTrigger: {
+    trigger: ".services",
+    start: "-=300",
+    end: "+=1100",
+  },
+});
+tl4
+  .from(".services-title h2", {
+    y: 30,
+    opacity: 0,
+  })
+  .from(".service-box", {
+    yPercent: 15,
+    opacity: 0,
+    stagger: 0.1,
+  });
 
 // /* About */
 // let tl5 = gsap.timeline({
