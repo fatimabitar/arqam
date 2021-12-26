@@ -28,6 +28,7 @@
 body {
   background-color: var(--black);
   color: var(--white);
+  -webkit-overflow-scrolling: touch;
 }
 body::-webkit-scrollbar {
   display: none;
