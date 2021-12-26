@@ -78,9 +78,8 @@ body::-webkit-scrollbar {
   background: linear-gradient(120deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../images/scyscraper.jpg);
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-size: cover;
-  overflow-x: hidden;
 }
 .hero .content {
   width: 100%;
