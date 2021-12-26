@@ -154,27 +154,27 @@ tl3
 
 /* services secion*/
 
-let tl4 = gsap.timeline({
-  defaults: {
-    duration: 0.1,
-    ease: Power1.easeOut,
-  },
-  scrollTrigger: {
-    trigger: ".services",
-    start: "-=300",
-    end: "+=1100",
-  },
-});
-tl4
-  .from(".services-title h2", {
-    y: 30,
-    opacity: 0,
-  })
-  .from(".service-box", {
-    yPercent: 15,
-    opacity: 0,
-    stagger: 0.1,
-  });
+// let tl4 = gsap.timeline({
+//   defaults: {
+//     duration: 0.2,
+//     ease: Power1.easeOut,
+//   },
+//   scrollTrigger: {
+//     trigger: ".services",
+//     start: "-=300",
+//     end: "+=1100",
+//   },
+// });
+// tl4
+//   .from(".services-title h2", {
+//     y: 30,
+//     opacity: 0,
+//   })
+//   .from(".service-box", {
+//     yPercent: 15,
+//     opacity: 0,
+//     stagger: 0.1,
+//   });
 
 // /* About */
 // let tl5 = gsap.timeline({
