@@ -103,6 +103,13 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
+  }
+  .img-div{
+    width: 80%;
+  }
+  .text-div{
+    width: 80%;
   }
   .images-row:nth-child(2) {
     flex-direction: column-reverse;
@@ -110,7 +117,7 @@
   .images-sec .lead {
     width: 100%;
     text-align: center;
-    margin-top: 2rem !important;
+    margin-top: 3rem !important;
     font-size: 1.5rem;
     line-height: 1.5;
   }
@@ -159,6 +166,7 @@
   }
   .lead {
     font-size: 14px !important;
+    width: 100%;
   }
   .hero .btn {
     margin-bottom: 0rem;
