@@ -157,6 +157,7 @@ body::-webkit-scrollbar {
 .images-sec {
   background: url(../images/RectLight.png);
   background-size: cover;
+  background-attachment: fixed;
 }
 .images-sec img {
   width: 100%;
