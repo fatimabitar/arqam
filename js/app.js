@@ -70,6 +70,7 @@ tl1
     },
     "+=0.1"
   );
+  
 
 /* Mission and vision */
 let tl2 = gsap.timeline({
