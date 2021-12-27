@@ -31,8 +31,8 @@ tl.to(".first", 1, {
 // //Hero animations
 let tl1 = gsap.timeline({
   defaults: {
-    duration: 0.5,
-    ease: Power1.easeIn,
+    duration: 0.3,
+    ease: Power0.back,
   },
   delay: 3.6,
 });
@@ -66,7 +66,7 @@ tl1
     {
       y: 30,
       opacity: 0,
-      duration: 0.3,
+      duration: 0.1,
     },
     "+=0.1"
   );

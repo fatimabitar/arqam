@@ -231,12 +231,12 @@ body::-webkit-scrollbar {
 }
 .service-box::before {
   content: "";
-  width: 100px;
+  width: 120px;
   height: 150%;
   background: #7e7d7b13;
   position: absolute;
   left: 50%;
-  top: -35%;
+  top: -28%;
   transform: translateX(-50%) rotate(45deg);
   -webkit-transform: translateX(-50%) rotate(45deg);
   -moz-transform: translateX(-50%) rotate(45deg);
@@ -248,7 +248,7 @@ body::-webkit-scrollbar {
   -moz-transition: var(--transition);
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
-  transform-origin: top;
+  /* transform-origin: top; */
 }
 .card-content {
   z-index: 2;
