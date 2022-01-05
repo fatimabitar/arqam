@@ -114,7 +114,7 @@ let tl3 = gsap.timeline({
 tl3
   .from(".row-1 .img-div", {
     opacity: 0,
-    y: 200,
+    y: 50,
   })
   .from(
     ".row-1 .text-div",
@@ -128,7 +128,7 @@ tl3
     ".row-2 .img-div",
     {
       opacity: 0,
-      y: 200,
+      y: 50,
     },
     "+=0.1"
   )
@@ -144,7 +144,7 @@ tl3
     ".row-3 .img-div",
     {
       opacity: 0,
-      y: 200,
+      y: 50,
     },
     "+=0.1"
   )
