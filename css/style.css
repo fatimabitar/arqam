@@ -211,85 +211,126 @@ body::-webkit-scrollbar {
   font-size: 17px;
   margin-bottom: 5rem;
 }
-
-.services-wrapper {
+.works-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 350px;
+  height: 300px;
+  margin: 0 0 3rem 2rem;
   display: grid;
-  grid-template-columns: repeat(3, 310px);
-  grid-template-rows: repeat(2, 310px);
-  gap: 20px;
   place-items: center;
-  text-align: center;
+  background: #141414;
   position: relative;
 }
-.service-box {
+.card img {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.card-back,
+.card-overlay {
+  grid-row: 1;
+  grid-column: 1;
+  position: relative;
+}
+.card-overlay {
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background: var(--light-black);
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: all ease 0.5s;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  -ms-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-  overflow: hidden;
+  background: #141414;
+  opacity: 0.7;
+  display: grid;
+  place-items: center;
 }
-.service-box::before {
+.card-overlay h5 {
+  font-size: 1.8rem;
+  text-align: center;
+  opacity: 1 !important;
+}
+.card::before {
   content: "";
-  width: 120px;
-  height: 150%;
-  background: #7e7d7b13;
   position: absolute;
-  left: 50%;
-  top: -28%;
-  transform: translateX(-50%) rotate(45deg);
-  -webkit-transform: translateX(-50%) rotate(45deg);
-  -moz-transform: translateX(-50%) rotate(45deg);
-  -ms-transform: translateX(-50%) rotate(45deg);
-  -o-transform: translateX(-50%) rotate(45deg);
-  z-index: 1;
-  transition: var(--transition);
-  -webkit-transition: var(--transition);
-  -moz-transition: var(--transition);
-  -ms-transition: var(--transition);
-  -o-transition: var(--transition);
-  /* transform-origin: top; */
+  top: -0.5%;
+  left: 0%;
+  width: 0;
+  height: 0;
+  border: 2px solid #fff;
+  opacity: 0;
 }
-.card-content {
-  z-index: 2;
-  padding: 1rem 0;
-  transition: var(--transition);
-  -webkit-transition: var(--transition);
-  -moz-transition: var(--transition);
-  -ms-transition: var(--transition);
-  -o-transition: var(--transition);
+.card:hover.card::before {
+  animation: animate1 0.6s linear forwards;
+  opacity: 1;
 }
-.card-content h3 {
-  font-size: 2rem;
-  font-weight: 500;
+
+@keyframes animate1 {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: #aaa;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100.5%;
+    height: 0;
+    border-top-color: #aaa;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100.5%;
+    height: 101%;
+    border-top-color: #aaa;
+    border-right-color: #aaa;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
 }
-.card-content p {
-  font-size: 1.6rem;
-  padding: 0.5rem 0 0;
-  display: none;
-  font-weight: 500;
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+  opacity: 0;
 }
-.service-box:hover.service-box::before {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  top: -25%;
-  left: 35%;
+.card:hover.card::after {
+  animation: animate2 0.6s linear forwards;
+  opacity: 1;
 }
-.service-box:hover .card-content p {
-  display: block;
+
+@keyframes animate2 {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #aaa;
+  }
+  100% {
+    width: 100.5%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #aaa;
+    border-left-color: #aaa;
+  }
 }
 
 /* About Section */
