@@ -13,7 +13,7 @@ const tl = gsap.timeline();
 tl.to(".first", 1, {
   xPercent: "-100",
   ease: Power1.easeIn,
-  delay: 3,
+  delay: 2.95,
 })
   .call(removeElement(".first"))
   .to(
@@ -22,9 +22,8 @@ tl.to(".first", 1, {
     {
       xPercent: "100",
       ease: Power1.easeInOut,
-      delay: 3,
     },
-    "0"
+    "3.1"
   )
   .call(removeElement(".second"));
 
@@ -39,10 +38,6 @@ let tl1 = gsap.timeline({
 tl1
   .from(".navbar", {
     y: -30,
-    opacity: 0,
-  })
-  .from(".logo", {
-    y: 30,
     opacity: 0,
   })
   .from(
@@ -70,7 +65,6 @@ tl1
     },
     "+=0.1"
   );
-  
 
 /* Mission and vision */
 let tl2 = gsap.timeline({
@@ -84,16 +78,26 @@ let tl2 = gsap.timeline({
     end: "+=300",
   },
 });
+let tl8 = gsap.timeline({
+  defaults: {
+    duration: 0.5,
+    ease: Power1.easeInOut,
+  },
+  scrollTrigger: {
+    trigger: ".mission-vision",
+    start: "+=200",
+    end: "+=300",
+  },
+});
 
-tl2
-  .from(".mission", {
-    y: 25,
-    opacity: 0,
-  })
-  .from(".vision", {
-    y: 25,
-    opacity: 0,
-  });
+tl2.from(".mission", {
+  y: 25,
+  opacity: 0,
+});
+tl8.from(".vision", {
+  y: 25,
+  opacity: 0,
+});
 
 /* Images secion*/
 let tl3 = gsap.timeline({

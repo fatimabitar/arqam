@@ -162,21 +162,25 @@ body {
   position: fixed;
   background: #222222;
   z-index: 10500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .loaded {
-  display: none;
+  display: none !important;
 }
-svg text {
+svg .text {
   position: absolute;
   left: 50%;
   top: 50%;
   stroke: #fff;
-  font-size: 150px;
+  font-size: 120px;
   font-weight: 700;
   stroke-width: 3;
-  animation: textAnimate 1.5s ease infinite;
-  -webkit-animation: textAnimate 1.5s ease infinite;
+  animation: textAnimate 1.4s ease infinite;
+  -webkit-animation: textAnimate 1.4s ease infinite;
 }
+
 @keyframes textAnimate {
   0% {
     stroke-dasharray: 0 50%;
