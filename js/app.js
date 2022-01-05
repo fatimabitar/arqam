@@ -108,7 +108,7 @@ let tl3 = gsap.timeline({
   scrollTrigger: {
     trigger: ".images-sec",
     start: "-=300",
-    end: "+=500",
+    end: "+=300",
   },
 });
 tl3
