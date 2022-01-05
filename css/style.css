@@ -29,9 +29,9 @@ body {
   background-color: var(--black);
   color: var(--white);
 }
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
 .navbar {
   font-size: 1.7rem;
   padding: 0;
