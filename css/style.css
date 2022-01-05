@@ -216,6 +216,7 @@ height: 60px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .card {
   width: 350px;
