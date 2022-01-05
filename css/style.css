@@ -160,7 +160,7 @@ height: 60px;
 /* Images Section */
 /***********************************/
 .images-sec {
-  background: url(../images/RectLight.svg);
+  background: url(../images/RectLight.png);
   background-size: cover;
 }
 .images-sec img {
@@ -338,7 +338,7 @@ height: 60px;
 /********************************/
 .about {
   height: 100vh;
-  background: url(../images/RectLight.svg);
+  background: url(../images/RectLight.png);
   background-position: bottom;
   padding: 5rem 0;
 }
