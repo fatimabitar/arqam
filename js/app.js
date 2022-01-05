@@ -102,8 +102,8 @@ tl8.from(".vision", {
 /* Images secion*/
 let tl3 = gsap.timeline({
   defaults: {
-    duration: 0.5,
-    ease: Power1.easeInOut,
+    duration: 0.3,
+    ease: Power0.easeInOut,
   },
   scrollTrigger: {
     trigger: ".images-sec",
@@ -114,13 +114,13 @@ let tl3 = gsap.timeline({
 tl3
   .from(".row-1 .img-div", {
     opacity: 0,
-    y: 50,
+    y: 30,
   })
   .from(
     ".row-1 .text-div",
     {
       opacity: 0,
-      y: 50,
+      y: 30,
     },
     "+=0.1"
   )
@@ -128,7 +128,7 @@ tl3
     ".row-2 .img-div",
     {
       opacity: 0,
-      y: 50,
+      y: 30,
     },
     "+=0.1"
   )
@@ -136,7 +136,7 @@ tl3
     ".row-2 .text-div",
     {
       opacity: 0,
-      y: 50,
+      y: 30,
     },
     "+=0.1"
   )
@@ -144,7 +144,7 @@ tl3
     ".row-3 .img-div",
     {
       opacity: 0,
-      y: 50,
+      y: 30,
     },
     "+=0.1"
   )
@@ -152,7 +152,7 @@ tl3
     ".row-3 .text-div",
     {
       opacity: 0,
-      y: 50,
+      y: 30,
     },
     "+=0.1"
   );

@@ -79,6 +79,7 @@ height: 60px;
   background-attachment: fixed;
   background-position: top;
   background-size: cover;
+  overflow-x: hidden;
 }
 .hero .content {
   width: 100%;
