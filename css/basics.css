@@ -194,12 +194,12 @@ svg .text {
     left: 60% !important;
     text-align: center;
     font-size: 80px;
-  }
+}
   .arkam{
-    transform: translate(500px ,400px);
-    -webkit-transform: translate(500px ,400px);
-    -moz-transform: translate(500px ,400px);
-    -ms-transform: translate(500px ,400px);
-    -o-transform: translate(500px ,400px);
+    transform: translate(510px ,400px);
+    -webkit-transform: translate(510px ,400px);
+    -moz-transform: translate(510px ,400px);
+    -ms-transform: translate(510px ,400px);
+    -o-transform: translate(510px ,400px);
 }
 }

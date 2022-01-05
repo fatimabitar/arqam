@@ -34,7 +34,7 @@ body::-webkit-scrollbar {
 }
 .navbar {
   font-size: 1.7rem;
-  /* padding: 1rem 0; */
+  padding: 0;
 }
 .navbar-brand .brand-logo{
 width: 60px;
