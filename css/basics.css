@@ -190,7 +190,7 @@ svg .text {
   }
 }
 @media (max-width: 600px) {
-  svg text {
-    font-size: 80px;
+  svg .text {
+    left: 60%;
   }
 }
