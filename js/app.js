@@ -13,7 +13,7 @@ const tl = gsap.timeline();
 tl.to(".first", 1, {
   xPercent: "-100",
   ease: Power1.easeIn,
-  delay: 2.95,
+  delay: 2.9,
 })
   .call(removeElement(".first"))
   .to(
@@ -23,7 +23,7 @@ tl.to(".first", 1, {
       xPercent: "100",
       ease: Power1.easeInOut,
     },
-    "3.1"
+    "3"
   )
   .call(removeElement(".second"));
 
