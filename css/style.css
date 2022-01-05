@@ -195,7 +195,8 @@ body::-webkit-scrollbar {
 /* Services Section */
 /************************************/
 .services {
-  background: url("../images/bg.png");
+  /* background: url("../images/bg.png"); */
+  background: #141414;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
