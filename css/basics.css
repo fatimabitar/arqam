@@ -177,8 +177,9 @@ svg .text {
   font-size: 120px;
   font-weight: 700;
   stroke-width: 3;
-  animation: textAnimate 1.55s ease infinite;
-  -webkit-animation: textAnimate 1.55s ease infinite;
+  animation: textAnimate 1.6s ease infinite ;
+  -webkit-animation: textAnimate 1.6s ease infinite ;
+  animation-delay: 0.2s;
 }
 
 @keyframes textAnimate {

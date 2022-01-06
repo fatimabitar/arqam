@@ -13,7 +13,7 @@ const tl = gsap.timeline();
 tl.to(".first", 1, {
   xPercent: "-100",
   ease: Power1.easeIn,
-  delay: 2.9,
+  delay: 3,
 })
   .call(removeElement(".first"))
   .to(
@@ -85,7 +85,7 @@ let tl8 = gsap.timeline({
   },
   scrollTrigger: {
     trigger: ".mission-vision",
-    start: "+=200",
+    start: "+=150",
     end: "+=300",
   },
 });
@@ -102,13 +102,12 @@ tl8.from(".vision", {
 /* Images secion*/
 let tl3 = gsap.timeline({
   defaults: {
-    duration: 0.3,
-    ease: Power0.easeInOut,
+    duration: 0.5,
+    ease: Power1.easeInOut,
   },
   scrollTrigger: {
     trigger: ".images-sec",
     start: "-=300",
-    end: "+=100",
   },
 });
 tl3
