@@ -115,43 +115,23 @@ tl3
     opacity: 0,
     y: 30,
   })
-  .from(
-    ".row-1 .text-div",
-    {
-      opacity: 0,
-      y: 30,
-    },
-    "+=0.1"
-  )
-  .from(
-    ".row-2 .img-div",
-    {
-      opacity: 0,
-      y: 30,
-    },
-    "+=0.1"
-  )
-  .from(
-    ".row-2 .text-div",
-    {
-      opacity: 0,
-      y: 30,
-    },
-    "+=0.1"
-  )
-  .from(
-    ".row-3 .img-div",
-    {
-      opacity: 0,
-      y: 30,
-    },
-    "+=0.1"
-  )
-  .from(
-    ".row-3 .text-div",
-    {
-      opacity: 0,
-      y: 30,
-    },
-    "+=0.1"
-  );
+  .from(".row-1 .text-div", {
+    opacity: 0,
+    y: 30,
+  })
+  .from(".row-2 .img-div", {
+    opacity: 0,
+    y: 30,
+  })
+  .from(".row-2 .text-div", {
+    opacity: 0,
+    y: 30,
+  })
+  .from(".row-3 .img-div", {
+    opacity: 0,
+    y: 30,
+  })
+  .from(".row-3 .text-div", {
+    opacity: 0,
+    y: 30,
+  });
