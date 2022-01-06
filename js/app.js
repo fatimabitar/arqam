@@ -100,38 +100,49 @@ tl8.from(".vision", {
 });
 
 /* Images secion*/
-let tl3 = gsap.timeline({
-  defaults: {
-    duration: 0.5,
-    ease: Power1.easeInOut,
-  },
+// let tl3 = gsap.timeline({
+//   defaults: {
+//     duration: 0.5,
+//     ease: Power1.easeInOut,
+//   },
+//   scrollTrigger: {
+//     trigger: ".images-sec",
+//     start: "-=300",
+//   },
+// });
+// tl3
+//   .from(".row-1 .img-div", {
+//     opacity: 0,
+//     y: 30,
+//   })
+//   .from(".row-1 .text-div", {
+//     opacity: 0,
+//     y: 30,
+//   })
+//   .from(".row-2 .img-div", {
+//     opacity: 0,
+//     y: 30,
+//   })
+//   .from(".row-2 .text-div", {
+//     opacity: 0,
+//     y: 30,
+//   })
+//   .from(".row-3 .img-div", {
+//     opacity: 0,
+//     y: 30,
+//   })
+//   .from(".row-3 .text-div", {
+//     opacity: 0,
+//     y: 30,
+//   });
+gsap.from(".stagger", {
   scrollTrigger: {
     trigger: ".images-sec",
     start: "-=300",
   },
+  duration: 0.8,
+  ease: Power1.easeInOut,
+  stagger: 0.3,
+  opacity: 0,
+  y: 50,
 });
-tl3
-  .from(".row-1 .img-div", {
-    opacity: 0,
-    y: 30,
-  })
-  .from(".row-1 .text-div", {
-    opacity: 0,
-    y: 30,
-  })
-  .from(".row-2 .img-div", {
-    opacity: 0,
-    y: 30,
-  })
-  .from(".row-2 .text-div", {
-    opacity: 0,
-    y: 30,
-  })
-  .from(".row-3 .img-div", {
-    opacity: 0,
-    y: 30,
-  })
-  .from(".row-3 .text-div", {
-    opacity: 0,
-    y: 30,
-  });
