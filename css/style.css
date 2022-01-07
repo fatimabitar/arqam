@@ -179,6 +179,7 @@ height: 60px;
   justify-content: space-evenly;
   margin-bottom: 6rem;
   height: auto;
+  will-change: transform;
 }
 .img-div {
   width: 45%;
@@ -352,6 +353,7 @@ height: 60px;
   font-size: 4rem;
   font-weight: 800;
   color: var(--cta);
+  will-change: transform;
 }
 .about .lead {
   width: 75%;
