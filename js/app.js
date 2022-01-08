@@ -67,82 +67,46 @@ tl1
   );
 
 /* Mission and vision */
-let tl2 = gsap.timeline({
-  defaults: {
-    duration: 0.5,
-    ease: Power1.easeInOut,
-  },
-  scrollTrigger: {
-    trigger: ".mission-vision",
-    start: "-=200",
-    end: "+=300",
-  },
-});
-let tl8 = gsap.timeline({
-  defaults: {
-    duration: 0.5,
-    ease: Power1.easeInOut,
-  },
-  scrollTrigger: {
-    trigger: ".mission-vision",
-    start: "+=150",
-    end: "+=300",
-  },
-});
-
-tl2.from(".mission", {
-  y: 25,
-  opacity: 0,
-});
-tl8.from(".vision", {
-  y: 25,
-  opacity: 0,
-});
-
-/* Images secion*/
-// let tl3 = gsap.timeline({
+// let tl2 = gsap.timeline({
 //   defaults: {
 //     duration: 0.5,
 //     ease: Power1.easeInOut,
 //   },
 //   scrollTrigger: {
+//     trigger: ".mission-vision",
+//     start: "-=200",
+//     end: "+=300",
+//   },
+// });
+// let tl8 = gsap.timeline({
+//   defaults: {
+//     duration: 0.5,
+//     ease: Power1.easeInOut,
+//   },
+//   scrollTrigger: {
+//     trigger: ".mission-vision",
+//     start: "+=150",
+//     end: "+=300",
+//   },
+// });
+
+// tl2.from(".mission", {
+//   y: 25,
+//   opacity: 0,
+// });
+// tl8.from(".vision", {
+//   y: 25,
+//   opacity: 0,
+// });
+
+// gsap.from(".stagger", {
+//   scrollTrigger: {
 //     trigger: ".images-sec",
 //     start: "-=300",
 //   },
+//   duration: 0.8,
+//   ease: Power1.easeInOut,
+//   stagger: 0.3,
+//   opacity: 0,
+//   y: 50,
 // });
-// tl3
-//   .from(".row-1 .img-div", {
-//     opacity: 0,
-//     y: 30,
-//   })
-//   .from(".row-1 .text-div", {
-//     opacity: 0,
-//     y: 30,
-//   })
-//   .from(".row-2 .img-div", {
-//     opacity: 0,
-//     y: 30,
-//   })
-//   .from(".row-2 .text-div", {
-//     opacity: 0,
-//     y: 30,
-//   })
-//   .from(".row-3 .img-div", {
-//     opacity: 0,
-//     y: 30,
-//   })
-//   .from(".row-3 .text-div", {
-//     opacity: 0,
-//     y: 30,
-//   });
-gsap.from(".stagger", {
-  scrollTrigger: {
-    trigger: ".images-sec",
-    start: "-=300",
-  },
-  duration: 0.8,
-  ease: Power1.easeInOut,
-  stagger: 0.3,
-  opacity: 0,
-  y: 50,
-});

@@ -25,6 +25,12 @@
   .contact {
     height: auto;
   }
+  /*Meet the owner*/
+  .owner-text .lead {
+    width: 90%;
+    font-size: 1.5rem;
+    padding: 0 2rem 3rem;
+  }
 }
 @media (max-width: 992px) {
   .hero .title {
@@ -47,6 +53,15 @@
     height: 60%;
     text-align: center;
     margin-top: 0rem;
+  }
+  /*Meet the owner*/
+  .owner-text .lead {
+    width: 90%;
+    font-size: 1.5rem;
+    padding: 0 2rem 3rem;
+  }
+  .owner-img {
+    clip-path: polygon(0 0, 100% 0%, 90% 100%, 0 100%);
   }
 }
 @media (max-width: 768px) {
@@ -126,8 +141,18 @@
     width: 100%;
     text-align: center;
   }
-  .card{
+  .card {
     margin: 1rem auto;
+  }
+  /* Meet The owner */
+  .owner-flex {
+    flex-direction: column-reverse;
+  }
+  .owner-img {
+    clip-path: none;
+  }
+  .owner-text {
+    padding: 3rem 0;
   }
 }
 
