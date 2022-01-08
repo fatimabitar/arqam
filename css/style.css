@@ -263,7 +263,7 @@ body::-webkit-scrollbar {
   left: 0%;
   width: 0;
   height: 0;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   opacity: 0;
 }
 .card:hover.card::before {
@@ -304,7 +304,7 @@ body::-webkit-scrollbar {
   left: 0%;
   width: 0;
   height: 0;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   opacity: 0;
 }
 .card:hover.card::after {
