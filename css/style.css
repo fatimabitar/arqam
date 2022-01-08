@@ -159,46 +159,48 @@ body::-webkit-scrollbar {
   animation-duration: 2.5s;
 }
 
-/* Images Section */
+/* Services Section */
 /***********************************/
-.images-sec {
+.services {
   background: url(../images/RectLight.png);
   background-size: cover;
   background-position: center;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
-.images-sec img {
-  width: 100%;
-}
-.images-sec .lead {
+
+.services .lead {
   width: 60%;
   font-size: 1.7rem;
   line-height: 1.6;
 }
-.images-row {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 6rem;
-  height: auto;
-  will-change: transform;
+
+.service-card {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
-.img-div {
-  width: 45%;
-  height: auto;
-}
-.img-div > img {
+.service-back,
+.service-overlay {
+  grid-row: 1;
+  grid-column: 1;
   width: 100%;
+  height: 365px;
+  overflow: hidden;
 }
-.text-div {
-  width: 45%;
+.service-overlay {
   display: flex;
   align-items: center;
-  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
 }
-/* Services Section */
+.service-overlay {
+  text-align: center;
+}
+
+/* Work Area Section */
 /************************************/
-.services {
-  /* background: url("../images/bg.png"); */
+.area {
   background: #141414;
   background-size: cover;
   background-attachment: fixed;
@@ -263,11 +265,25 @@ body::-webkit-scrollbar {
   left: 0%;
   width: 0;
   height: 0;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   opacity: 0;
 }
 .card:hover.card::before {
   animation: animate1 0.6s linear forwards;
+  opacity: 1;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+  opacity: 0;
+}
+.card:hover.card::after {
+  animation: animate2 0.6s linear forwards;
   opacity: 1;
 }
 
@@ -352,8 +368,7 @@ body::-webkit-scrollbar {
 .owner-img img {
   height: 100% !important;
 }
-.owner-text {
-}
+
 .owner-title {
   font-size: 3rem;
   font-weight: 800;

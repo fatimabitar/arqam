@@ -27,45 +27,35 @@ tl.to(".first", 1, {
   )
   .call(removeElement(".second"));
 
-// //Hero animations
-let tl1 = gsap.timeline({
-  defaults: {
-    duration: 0.3,
-    ease: Power0.back,
-  },
+//Hero animations
+gsap.from(".navbar", {
+  y: -30,
+  opacity: 0,
   delay: 3.6,
+  duration: 0.3,
+  ease: Power2.easeInOut,
 });
-tl1
-  .from(".navbar", {
-    y: -30,
-    opacity: 0,
-  })
-  .from(
-    ".hero .title",
-    {
-      y: 30,
-      opacity: 0,
-    },
-    "+=0.1"
-  )
-  .from(
-    ".hero .lead",
-    {
-      y: 30,
-      opacity: 0,
-    },
-    "+=0.1"
-  )
-  .from(
-    ".hero .btn",
-    {
-      y: 30,
-      opacity: 0,
-      duration: 0.1,
-    },
-    "+=0.1"
-  );
-
+gsap.from(".hero .title", {
+  y: 30,
+  opacity: 0,
+  delay: 3.9,
+  duration: 0.5,
+  ease: Power2.easeInOut,
+});
+gsap.from(".hero .lead", {
+  y: 30,
+  opacity: 0,
+  delay: 4.4,
+  duration: 0.5,
+  ease: Power2.easeInOut,
+});
+gsap.from(".hero .btn", {
+  y: 30,
+  opacity: 0,
+  delay: 4.9,
+  duration: 0.1,
+  ease: Power4.easeInOut,
+});
 /* Mission and vision */
 // let tl2 = gsap.timeline({
 //   defaults: {
@@ -97,16 +87,4 @@ tl1
 // tl8.from(".vision", {
 //   y: 25,
 //   opacity: 0,
-// });
-
-// gsap.from(".stagger", {
-//   scrollTrigger: {
-//     trigger: ".images-sec",
-//     start: "-=300",
-//   },
-//   duration: 0.8,
-//   ease: Power1.easeInOut,
-//   stagger: 0.3,
-//   opacity: 0,
-//   y: 50,
 // });
