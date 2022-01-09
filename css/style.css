@@ -162,7 +162,7 @@ body::-webkit-scrollbar {
 /* Services Section */
 /***********************************/
 .services {
-  background: url(../images/RectLight.png);
+  /* background: url(../images/RectLight.png); */
   background-size: cover;
   background-position: center;
   /* pointer-events: none; */
