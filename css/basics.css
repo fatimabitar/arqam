@@ -8,7 +8,8 @@ html {
   line-height: 1.5;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Cormorant Garamond', serif;
+  /* font-family: "Raleway", sans-serif; */
   overflow-x: hidden;
   position: relative;
 }
@@ -177,8 +178,8 @@ svg .text {
   font-size: 120px;
   font-weight: 700;
   stroke-width: 3;
-  animation: textAnimate 1.6s ease infinite ;
-  -webkit-animation: textAnimate 1.6s ease infinite ;
+  animation: textAnimate 1.6s ease infinite;
+  -webkit-animation: textAnimate 1.6s ease infinite;
   animation-delay: 0.2s;
 }
 
@@ -195,12 +196,12 @@ svg .text {
     left: 60% !important;
     text-align: center;
     font-size: 80px;
-}
-  .arkam{
-    transform: translate(510px ,400px);
-    -webkit-transform: translate(510px ,400px);
-    -moz-transform: translate(510px ,400px);
-    -ms-transform: translate(510px ,400px);
-    -o-transform: translate(510px ,400px);
-}
+  }
+  .arkam {
+    transform: translate(510px, 400px);
+    -webkit-transform: translate(510px, 400px);
+    -moz-transform: translate(510px, 400px);
+    -ms-transform: translate(510px, 400px);
+    -o-transform: translate(510px, 400px);
+  }
 }
