@@ -95,6 +95,7 @@ body::-webkit-scrollbar {
   width: 50%;
   font-size: 1.6rem;
   margin-bottom: 2rem;
+  font-weight: 400;
 }
 .logo {
   width: 200px;

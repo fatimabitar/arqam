@@ -8,8 +8,9 @@ html {
   line-height: 1.5;
 }
 body {
-  font-family: 'Cormorant Garamond', serif;
+  /* font-family: 'Cormorant Garamond', serif; */
   /* font-family: "Raleway", sans-serif; */
+  font-family: "Volkhov", serif;
   overflow-x: hidden;
   position: relative;
 }
