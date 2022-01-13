@@ -10,7 +10,8 @@ html {
 body {
   /* font-family: 'Cormorant Garamond', serif; */
   /* font-family: "Raleway", sans-serif; */
-  font-family: "Volkhov", serif;
+  /* font-family: "Volkhov", serif; */
+  font-family: 'Times New Roman', Times, serif;
   overflow-x: hidden;
   position: relative;
 }
@@ -108,7 +109,7 @@ body {
   -o-transition: all 0.5s ease;
 }
 .bg-dark {
-  background: rgba(0, 0, 0, 0.8) !important;
+  background: rgb(0, 0, 0) !important;
 }
 /* Start To Top Button  */
 #toTopButton {
